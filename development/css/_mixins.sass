@@ -1,0 +1,40 @@
+=reset
+	margin: 0 auto !important
+	padding: 0 !important
+
+=box-reset
+	box-shadow: 0 0 0 0 !important
+
+=border-radius($var)
+	-webkit-border-radius: $var !important
+	-moz-border-radius: $var !important
+	border-radius: $var !important
+
+=placeholder($var)
+	::-webkit-input-placeholder
+		color: $var
+	::-moz-placeholder
+		color: $var
+	::-ms-input-placeholder
+		color: $var
+	::-moz-placeholder
+		color: $var
+
+=muscle-flex
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+
+=rotation($var)
+	-ms-transform: rotate($var)
+	-webkit-transform: rotate($var)
+	transform: rotate($var)
+
+=transition($var)
+	-webkit-transition: $var;
+	-moz-transition: $var;
+	-o-transition: $var;
+	-ms-transition: $var;
+	transition: $var;

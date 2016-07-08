@@ -1,0 +1,489 @@
+@import variables
+@import mixins
+
+/*
+ * Navigation
+ *
+ * 1.1 General
+ * 1.2 Nav
+ * 1.3 Header Image
+ * 1.4 Mission
+ * 1.5 Path Selection
+ * 1.6 Current Menu
+ * 1.7 Custom Menu
+ */
+
+/*
+ * 1.1 General Section
+ */
+
+*
+	+box-reset
+	+border-radius(0)
+
+body
+	position: absolute
+	background-color: $main-grey
+	font-size: 20px
+	height: 100%
+	width: 100%
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+input[type="checkbox"]
+	position: relative !important
+	left: 0 !important
+	opacity: 1 !important
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+input
+	font-family: $head-copy
+	color: $main-black !important
+
+strong
+	font-weight: 700
+
+img
+	+reset
+	display: inherit
+
+nav
+	+box-reset
+	margin-bottom: 0 !important
+	position: fixed
+	z-index: 8675309
+
+ul
+	height: 100%
+
+footer
+	width: 100%
+	position: absolute
+	margin: 0 auto !important
+	min-height: 350px
+	padding: 0 50px 40px
+
+h1
+	font-family: $head-copy
+	font-weight: 700
+	font-size: 36px
+	line-height: 42px
+	text-align: center
+	+reset
+
+h2
+	font-size: 24px
+	line-height: 29px
+	font-weight: 600
+
+h3
+	font-size: 25px
+	line-height: 30px
+	font-weight: 400
+	+reset
+
+h4
+	font-size: 22px
+	line-height: 30px
+
+h5
+	font-size: 21px
+	line-height: 28px
+h6,
+label
+	font-size: 16px
+	line-height: 21px
+	font-weight: 400
+	color: $main-black
+	margin: 0 auto !important
+
+label
+	font-family: $body-copy
+	padding-right: 10px
+
+input[type="number"]
+	width: 30px
+	height: 30px
+	padding-left: 4px
+	background-color: $main-white
+	box-shadow: $default-box
+
+fieldset
+	border: 0
+	+reset
+	text-align: center
+
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after
+	border: 0
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label
+	padding-left: 10px
+
+[type="radio"] + label:before,
+[type="radio"] + label:after
+	content: none
+
+[type="radio"]:not(:checked),
+[type="radio"]:checked
+	position: relative
+	left: 0
+	opacity: 1
+
+.form-set
+	width: 100%
+
+p,
+a,
+.btn
+	font-size: 1em
+	line-height: 1.4em
+	font-family: $body-copy
+
+.btn
+	font-family: $head-copy
+	font-weight: 300
+	color: $main-black
+	background-color: $main-green
+	transition: background-color 0.25s $cubic
+	+border-radius(10px)
+
+form .btn
+	font-family: $head-copy
+	color: $main-white !important
+	display: block
+	text-transform: none
+
+.btn:hover,
+.btn:focus
+	background-color: $main-hover-green
+
+.center
+	margin: 0 auto !important
+	float: inherit !important
+	text-align: center
+
+.reset-padding
+	padding: 0 !important
+
+.reset-margin
+	margin: 0 auto !important
+
+/*
+ * 1.1 End General Section
+ */
+
+/*
+ * 1.2 Nav Section
+ */
+
+nav ul a,
+.side-nav a
+	font-family: $head-copy
+	font-size: 1.2em
+	line-height: 2.8em
+	font-weight: 300
+	will-change: color, background-color
+	transition: all 0.5s $cubic
+
+nav ul a:hover
+	color: $main-white !important
+	background-color: $main-black !important
+
+section
+	margin-top: 20px !important
+
+nav
+	background-color: $main-white
+	height: 60px
+	box-shadow: $default-box
+
+nav ul li,
+nav ul a
+	height: 100%
+	max-height: 60px
+
+nav a.button-collapse
+	height: 100%
+	max-height: 60px
+
+.quantity
+	position: absolute
+	top: 20px
+	right: 4px
+	font-family: $head-copy
+	font-size: 16px
+	line-height: 20px
+	font-weight: 700
+	height: 22px
+	width: 22px
+	text-align: center
+	color: $main-white
+	background-color: $main-green
+	+border-radius(12px)
+	will-change: width, height
+	transition: all 0.5s $cubic
+
+.quantity-animation
+	padding-left: 8px
+	line-height: 24px
+	height: 26px
+	width: 26px
+
+/*
+ * 1.2 End Nav Section
+ */
+
+/*
+ * 1.3 Header Image Section
+ */
+
+.head-background,
+.head-foreground
+	+reset
+	width: 100%
+
+.head-foreground
+	position: absolute
+	z-index: 1
+
+.head-foreground img
+	position: relative
+	top: 180px
+	will-change: top
+	transition: top 0.5s $cubic
+
+.head-background
+	max-width: 1200px
+
+.head-background img
+	position: relative
+	box-shadow: $default-box
+	z-index: 0
+
+
+.brand-logo
+	line-height: 70px
+
+.brand-logo img
+	display: inline-block
+
+.container,
+section
+	margin: 0 auto
+	width: 100%
+	max-width: 1200px
+
+/*
+ * 1.3 End Header Image Section
+ */
+
+/*
+ * 1.4 Mission Section
+ */
+
+#mission
+	padding: 80px 0
+	background-color: $main-white
+	box-shadow: $default-box
+
+.top-border
+	border-top: 1px solid $main-black
+	padding-top: 20px
+
+/*
+ * 1.4 End Mission Section
+ */
+
+/*
+ * 1.5 Path Selection/ Menu Section
+ */
+
+.path-selection
+	padding: 20px !important
+	background-color: $main-white
+	max-width: 588px
+	box-shadow: $default-box
+
+.path-selection img
+	width: 100%
+	max-width: 550px
+
+.menu-button
+	will-change: opacity, top
+	opacity: 1
+	max-height: 400px
+	transition: all 0.5s $cubic
+
+.l6-left,
+.l4-left
+	padding-left: 0 !important
+
+.l6-right,
+.l4-right
+	padding-right: 0 !important
+
+.l4-middle
+	max-height: 412px
+
+.left
+	float: left
+	text-align: left
+
+.right
+	float: right
+	text-align: right
+
+.btn-placement,
+.btn-placement-l4
+	position: absolute
+	width: 100%
+	max-width: 588px
+	text-align: center
+
+.btn-placement-l4
+	max-width: 380px
+
+.btn-placement-l4 .keymaster
+	margin-top: 220px
+
+.keymaster
+	position: relative
+	margin-top: 360px
+	height: 52px
+
+.keymaster a
+	font-family: $head-copy
+	font-weight: 600
+	text-transform: capitalize
+	font-size: 24px
+	line-height: 52px
+	color: $main-white !important
+
+
+/*
+ * 1.5 End Path Selection/ Menu Section
+ */
+
+/*
+ * 1.6 Current Menu Section
+ */
+
+.menu
+	transition: all 0.5s $cubic
+
+.menu-item
+	padding: 20px 40px
+	width: 80%
+
+.menu-list
+	height: 580px
+	overflow-y: scroll
+
+#current-menu
+	max-height: 0
+	overflow: hidden
+	transition: max-height 0.5s $cubic
+/*
+ * 1.6 End Current Menu Section
+ */
+
+/*
+ * 1.7 Custom Menu Section
+ */
+
+.custom-menu label
+	margin: 20px !important
+	padding: 0 !important
+	font-size: 1em
+	line-height: 60px
+	display: inline-block
+	text-align: center
+	height: 60px
+	width: 200px
+	background-color: $main-grey
+	+border-radius(10px)
+	box-shadow: $default-box
+
+.custom-menu input
+	margin: 20px
+	margin-right: 0 !important
+
+.custom-menu fieldset
+	text-align: left
+
+.price-list
+	float: left
+	width: 100%
+	text-align: left
+
+.quantity-selection
+	float: right
+
+.form-set
+	width: 100%
+
+.quantity
+	opacity: 0
+	will-change: opacity
+	transition: opacity 0.5s $cubic
+
+.cart-checkout
+	float: right
+	margin-left: 10px
+	color: $main-white !important
+
+.btn-back
+	background-color: #666666
+	will-change: background-color
+	transition: background-color 0.5s $cubic
+
+.btn-back:hover,
+.btn-back:focus
+	background-color: #333333
+
+.cart-btn-container
+	margin-right: 40px
+
+#checkout
+	height: 80%
+
+#checkout .modal-content
+	height: 90%
+
+.person-order
+	display: inline-block
+	width: 100%
+	padding: 10px
+	margin-bottom: 6px
+	border: 1px solid $main-grey
+
+.person-order h6,
+.person-order p,
+.person-order form,
+.person-order input
+	display: inline-block
+
+.person-order h6
+	padding-right: 4px
+
+.person-order form,
+.person-order input
+	float: right
+
+.person-order input
+	margin-bottom: 0 !important
+	+box-reset
+	border: 1px solid $main-grey
+
+/*
+ * 1.7 End Custom Menu Section
+ */

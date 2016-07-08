@@ -1,0 +1,65 @@
+{
+	"redVelvet" : {
+		"name": "Red Velvet Cupcakes",
+		"description": "Classic southern style cupcakes. The BEST red velvet cupcakes &mdash; a gorgeous red color, moist and fluffy, and topped with luscious cream cheese frosting.",
+		"id": "redVelvet",
+		"quantityName": "red-quantity",
+		"type" : "muffin"
+	},
+	"chaiSpice" : {
+		"name": "Chai Spice Cupcakes",
+		"description": "A treat for anyone who loves aromatic chai spices with ginger nutmeg and cinnamon vanilla cupcake frosting.",
+		"id": "chaiSpice",
+		"quantityName": "chai-quantity",
+		"type" : "muffin"
+	},
+	"birthdayCake" : {
+		"name": "Birthday Cake Cupcakes",
+		"description": "All the fun of childhood parties in a cup. Moist, delicious, and colorful, these cupcakes are packed with nostalgia!",
+		"id": "birthdayCake",
+		"quantityName": "birthday-quantity",
+		"type" : "muffin"
+	},
+	"citrusTwist" : {
+		"name": "Citrus Twist Cupcakes",
+		"description": "A sweet and tart blend of your favorite citrus fruits, fresh and tangy for the summer time.",
+		"id": "citrusTwist",
+		"quantityName": "citrus-quantity",
+		"type" : "muffin"
+	},
+	"greenTea" : {
+		"name": "Green Tea Cupcakes",
+		"description": "East meets West with these green tea infused delicacies. Like snowfall on Mt. Fuji, creamy, buttery frosting tops the puffy exterior of these asian-inspired cupcakes.",
+		"id": "greenTea",
+		"quantityName": "greenTea-quantity",
+		"type" : "muffin"
+	},
+	"peanutButter" : {
+		"name": "Sweet and salty peanut butter cookies",
+		"description": "The name says it all for these peanut butter delights. They are soft, puffy and have a delicious peanut crunch to them. The first bite melts in your mouth!",
+		"id": "peanutButter",
+		"quantityName": "peanut-quantity",
+		"type" : "cookie"
+	},
+	"whiteChocolate" : {
+		"name": "White chocolate cranberry and macadamia nut cookies",
+		"description": "TigerLily's take on one of America’s most loved cookie. The buttery macadamia nuts with the fresh cranberries provide for a sweet, tangy adventure.",
+		"id": "whiteChocolate",
+		"quantityName": "whiteChocolate-quantity",
+		"type" : "cookie"
+	},
+	"chocolateChip" : {
+		"name": "Chocolate Chip Cookies",
+		"description": "Fresh, gooey, and old fashioned. Our Chocolate Chip Cookies provide a twist on the most quintessential cookies of our time.",
+		"id": "chocolateChip",
+		"quantityName": "chocolateChip-quantity",
+		"type" : "cookie"
+	},
+	"oatmealRaisin" : {
+		"name": "Oatmeal Raisin Cookies",
+		"description": "If you're looking for a little less sweet in your bake, these cinnamon raisin oat cookies are what you are looking for. These oatmeal cookies are chewy, hearty, thick and tasty.",
+		"id": "oatmealRaisin",
+		"quantityName": "oatmealRaisin-quantity",
+		"type" : "cookie"
+	}
+}
