@@ -1,0 +1,228 @@
+{	
+	"tier3" : {
+		"name": "Filling",
+		"desc": "The gooey center. Or not. You decide."
+	},
+	"bananaChips" : {
+		"name": "Banana Chips",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"craisins" : {
+		"name": "Craisins",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"blueberries" : {
+		"name": "Blueberries",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"kiwi" : {
+		"name": "kiwi",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"mangoJerky" : {
+		"name": "Mango Jerky",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"raisins" : {
+		"name": "Raisins",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"raspberries" : {
+		"name": "Raspberries",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"shreddedCoconut" : {
+		"name": "Shredded Coconut",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"strawberries" : {
+		"name": "Strawberries",
+		"tier": "3",
+		"price": "1",
+		"type": "fruit"
+	},
+	"almonds" : {
+		"name": "Almonds",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"peanuts" : {
+		"name": "Peanuts",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"cornflakes" : {
+		"name": "Cornflakes",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"cashews" : {
+		"name": "Cashews",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"sunflowerSeeds" : {
+		"name": "Sunflower Seeds",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"pumpkinSeeds" : {
+		"name": "Pumpkin Seeds",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"pineNuts" : {
+		"name": "Pine Nuts",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"flaxseed" : {
+		"name": "Flaxseed",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"granola" : {
+		"name": "Granola",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"macadamia" : {
+		"name": "Macadamian Nuts",
+		"tier": "3",
+		"price": "1",
+		"type": "nuts"
+	},
+	"chiliPowder" : {
+		"name": "Chili Powder",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"chipotlePepper" : {
+		"name": "Chipotle Pepper",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"seaSalt" : {
+		"name": "Hawaiian Sea Salt",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"curryPowder" : {
+		"name": "Curry Powder",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"redPepper" : {
+		"name": "Red Pepper",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"bourbonVanilla" : {
+		"name": "Bourbon Vanilla",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"nutmeg" : {
+		"name": "Nutmeg",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"ginger" : {
+		"name": "Ginger",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"lavender" : {
+		"name": "Dried Lavender",
+		"tier": "3",
+		"price": "0.5",
+		"type": "herbs"
+	},
+	"bananaCream" : {
+		"name": "Banana Cream",
+		"tier": "3",
+		"price": "1",
+		"type": "cream"
+	},
+	"peanutCream" : {
+		"name": "Peanut Butter Cream",
+		"tier": "3",
+		"price": "1",
+		"type": "cream"
+	},
+	"bavarianCream" : {
+		"name": "Bavarian Cream",
+		"tier": "3",
+		"price": "1",
+		"type": "cream"
+	},
+	"creamCheese" : {
+		"name": "Cream Cheese",
+		"tier": "3",
+		"price": "1",
+		"type": "cream"
+	},
+	"chocolateCream" : {
+		"name": "Chocolate Cream Filling",
+		"tier": "3",
+		"price": "1",
+		"type": "cream"
+	},
+	"chocolateChunks" : {
+		"name": "Chocolate Chunks",
+		"tier": "3",
+		"price": "1",
+		"type": "chunky"
+	},
+	"mms" : {
+		"name": "M&Ms",
+		"tier": "3",
+		"price": "1",
+		"type": "chunky"
+	},
+	"honey" : {
+		"name": "Granulated Honey",
+		"tier": "3",
+		"price": "1",
+		"type": "chunky"
+	},
+	"pretzels" : {
+		"name": "Pretzels",
+		"tier": "3",
+		"price": "1",
+		"type": "chunky"
+	}
+}

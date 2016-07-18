@@ -23,7 +23,7 @@
 	<script src="https://use.fontawesome.com/b86bedf405.js"></script>
 
 </head>
-<body>
+<body style="overflow: hidden; width: 1200px;">
 
 <!-- Header/NAV 
 
@@ -33,7 +33,7 @@ remains the same through all HTML files
 	<header>
 		<nav>
 			<div class="nav-wrapper container">
-				<a href="#home" class="brand-logo nav-trigger"><img src="img/tigerlily_buffalo_logo.png" alt=""></a>
+				<a href="http://www.tigerlilybakes.com" class="brand-logo nav-trigger"><img src="img/tigerlily_buffalo_logo.png" alt=""></a>
 				<a class="btn btn-primary button-collapse" data-activates="mobile-demo" href="#navigation-main">
 					<i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
 					<span class="sr-only">Skip to main navigation</span>
@@ -61,14 +61,28 @@ remains the same through all HTML files
 		</nav>
 		<div id="home" class="header-img">
 			<div class="head-foreground">
-				<img src="img/tigerlilybakes-text-logo.png" alt="">
+				<img src="img/tigerlilybakes-text-logo.png" alt="TigerLily Bakes Logo">
 			</div>
 			<div class="head-background">
-				<img src="img/header-img.jpg" alt="TigerLily Bakes">
+				<img src="img/header-img.jpg" alt="Table in a Bakery">
 			</div>
 		</div>
 	</header>
-
+	<nav id="menu-select-nav" class="row">
+		<div class="col s12 m12 l12 center menu-drop">
+			<div class="row">
+				<div class="col s12 m6 l6 right-button">
+					<button class="active" data-path="current">Choose From Our Menu</button>
+				</div>
+				<div class="col s12 m6 l6 left-button">
+					<button class="inactive" data-path="custom">Custom Bakes Coming Soon</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<ul class="hide">
+		<li><a class="thanks" href="#thanks"><i class="fa fa-shopping-basket"></i></a></li>
+	</ul>
 	<section id="mission" class="row">
 		<div class="col s12 m12 l12">
 			<h1>Mission Statement</h1>
@@ -81,28 +95,28 @@ remains the same through all HTML files
 	</section>
 
 	<section id="menu" class="row">
-		<div class="col s12 m6 l6 l6-left menu-button">
-			<div class="btn-placement">
-				<div class="btn keymaster">
-					<a data-path="current" href="#!">Choose from our menu</a>
-				</div>
-			</div>
+		<div class="col s12 m12 l6 l6-left menu-button">
 			<div class="path-selection right">
 				<a data-path="current" href="#!">
 					<img src="img/product-trigger.jpg">
 				</a>
 			</div>
-		</div>
-		<div class="col s12 m6 l6 l6-right menu-button">
 			<div class="btn-placement">
 				<div class="btn keymaster">
-					<a data-path="custom" href="#!">Create your own bakes</a>
+					<a data-path="current" href="#!">Choose from our menu</a>
 				</div>
 			</div>
+		</div>
+		<div class="col s12 m12 l6 l6-right menu-button">
 			<div class="path-selection left">
 				<a data-path="custom" href="#!">
-					<img src="img/custom-trigger.jpg">
+					<img src="img/custom-trigger-disabled.jpg">
 				</a>
+			</div>
+			<div class="btn-placement">
+				<div class="btn keymaster inactive">
+					<a data-path="custom" href="#!"><!--Create your own bakes-->Custom Bakes Coming Soon</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -219,36 +233,12 @@ remains the same through all HTML files
 
 	</section>
 
-	<section id="shopping-cart">
-		<div id="checkout" class="modal">
+	<section id="thank-you">
+		<div id="thanks" class="modal open" style="z-index: 1003; display: block; opacity: 1; transform: scaleX(1); top: 10%;">
 			<div class="modal-content final-order">
-				<h4>Today's Order</h4>
-				<p>Review the following order to ensure it's correct.<br><em>Note: drivers check rec cards upon delivery.</em></p>
-				<span id="person-order">
-					<span id="someProduct" class="person-order">
-						<h6>Red Velvet Cupcake</h6>
-						<h6><em>40mg</em></h6>
-						<form>
-							<fieldset>
-								<input type="number" value="10" min="0" name="quantity" />
-							</fieldset>
-						</form>
-					</span>
-					<span id="someProduct" class="person-order">
-						<h6>Red Velvet Cupcake</h6>
-						<h6><em>40mg</em></h6>
-						<form>
-							<fieldset>
-								<input type="number" value="10" min="0" name="quantity" />
-							</fieldset>
-						</form>
-					</span>
-				</span>
+				<h1>Order Received!</h1>
+				<p>Thank you for placing an order with TigerLily Bakes! Our bakers will contact you shortly to schedule a delivery time.<br><br><em>Page redirecting...</em></p>
 			</div>
-			<div class="cart-btn-container">
-				<button class="modal-action modal-close btn cart-checkout" type="submit" value="submit">Place Order</button>
-				<button class="modal-action modal-close btn cart-checkout btn-back" value="back">Back</button> 
-			</div> 
 		</div>
 	</section>
 
@@ -256,40 +246,17 @@ remains the same through all HTML files
 
 	<footer id="site-map" class="row">
 		<div class="container">
-			<div class="col s12 m6 l3">
-				<h4>Company</h4>
-				<ul>
-					<li><a href="#!">About Us</a></li>
-					<li><a href="#!">Login</a></li>
-					<li><a href="#!">Products</a></li>
-					<li><a href="#!">Membership</a></li>
-				</ul>
-			</div>
-			<div class="col s12 m6 l3">
-				<h4>Support</h4>
-				<ul>
-					<li><a href="#!">Get Started</a></li>
-					<li><a href="#!">Contact</a></li>
-					<li><a href="#!">Documentation</a></li>
-					<li><a href="#!">Privacy &amp; Terms</a></li>
-				</ul>
-			</div>
-			<div class="col s12 m6 l3">
-				<h4>Partners and Vendors</h4>
-				<ul>
-					<li><a href="#!">Aguilar Agency</a></li>
-					<li><a href="#!">World Christian Agency</a></li>
-					<li><a href="#!">Credit Coaching</a></li>
-					<li><a href="#!">Laughlin Group</a></li>
-					<li><a href="#!">Rex Key &amp; Security</a></li>
-				</ul>
-			</div>
-			<div class="col s12 m6 l3">
-				<h4>Connect</h4>
-				<p>1 Ingress Corporation<br>1255 Treat Blvd Ste. 300<br>Walnut Creek, CA 94597<br>+1 925.800.3456<br>info@1ingress.com</p>
+			<div class="col s12 m12 l12">
+				<h6>Designed, developed, and published with love by <a href="https://github.com/pitabaki" target="_blank">KumaDev</a><br>TigerLilyBakes &copy; <? 
+						date_default_timezone_set('America/Los_Angeles');
+						$current_year = date("Y");
+						echo $current_year; 
+				?></h6>
 			</div>
 		</div>
 	</footer>
+
+	<div class="lean-overlay" id="materialize-lean-overlay-4" style="z-index: 1002; display: block; opacity: 0.5;"></div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/scripty-min.js"></script>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="1Ingress Website">
+	<title>TigerLily Bakes</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" sizes="16x16" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.png" sizes="16x16" />
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+	<!-- build:css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- endbuild -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="https://use.fontawesome.com/b86bedf405.js"></script>
+
+</head>
+<body>
+
+<!-- Header/NAV 
+
+remains the same through all HTML files 
+
+-->
+	<header>
+		<nav>
+			<div class="nav-wrapper container">
+				<a href="index.html" class="brand-logo nav-trigger"><img src="img/tigerlily_buffalo_logo.png" alt=""></a>
+				<a class="btn btn-primary button-collapse" data-activates="mobile-demo" href="#navigation-main">
+					<i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
+					<span class="sr-only">Skip to main navigation</span>
+				</a>
+				<!--<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>-->
+				<ul class="right hide-on-med-and-down">
+					<li><a class="nav-trigger" href="#home">Home</a></li>
+					<li><a class="nav-trigger" href="#mission">Mission</a></li>
+					<li><a class="nav-trigger" href="#menu">Menu</a></li>
+					<li><a class="nav-trigger" href="#contact">Contact</a></li>
+					<li><a href="https://www.facebook.com/tigerlilybakesofsd/"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/TigerLilyBaked"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="checkout" href="#checkout"><i class="fa fa-shopping-basket"></i><span id="cart-contents" class="quantity">4</span></a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a class="nav-trigger" href="#home">Home</a></li>
+					<li><a class="nav-trigger" href="#mission">Mission</a></li>
+					<li><a class="nav-trigger" href="#menu">Menu</a></li>
+					<li><a class="nav-trigger" href="#contact">Contact</a></li>
+					<li><a href="https://www.facebook.com/tigerlilybakesofsd/"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/TigerLilyBaked"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="checkout" href="#checkout"><i class="fa fa-shopping-basket"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="home" class="header-img">
+			<div class="head-foreground">
+				<img src="img/tigerlilybakes-text-logo.png" alt="">
+			</div>
+			<div class="head-background">
+				<img src="img/header-img.jpg" alt="TigerLily Bakes">
+			</div>
+		</div>
+	</header>
+
+	<section id="mission" class="row">
+		<div class="col s12 m12 l12">
+			<h1>Mission Statement</h1>
+			<div class="row">
+				<div class="col s12 m8 l6 center">
+					<p class="top-border">TigerLily Bakes is made up of a team of perfectionists &mdash; each person involved has put in countless hours of work towards perfecting our product. We hope to see our company grow and blossom, all the while fulfilling the needs of as many medicinal marijuana users as possible.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+	<section id="menu" class="row">
+		<div class="col s12 m6 l6 l6-left menu-button">
+			<div class="btn-placement">
+				<div class="btn keymaster">
+					<a data-path="current" href="#!">Choose from our menu</a>
+				</div>
+			</div>
+			<div class="path-selection right">
+				<a data-path="current" href="#!">
+					<img src="img/product-trigger.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="col s12 m6 l6 l6-right menu-button">
+			<div class="btn-placement">
+				<div class="btn keymaster">
+					<a data-path="custom" href="#!">Create your own bakes</a>
+				</div>
+			</div>
+			<div class="path-selection left">
+				<a data-path="custom" href="#!">
+					<img src="img/custom-trigger.jpg">
+				</a>
+			</div>
+		</div>
+	</section>-->
+
+	<section data-activate="menu" class="row">
+		<!--
+		<div class="col s12 m12 l12 reset-padding">
+
+
+			<div class="col s12 m6 l6">
+				<div class="path-selection right">
+					<img src="img/menu-hero.jpg">
+				</div>
+			</div>
+
+
+			<div id="current-selection" class="col s12 m6 l6 menu-list">
+				<div class="menu-item">
+					<div class="left">
+						<h2>Red Velvet Cupcakes</h2>
+						<p>Classic southern style cupcakes. The BEST red velvet cupcakes &mdash; a gorgeous red color, moist and fluffy, and topped with luscious cream cheese frosting.</p>
+						<h6><em>$4.99 each &mdash; 40mg/thc</em></h6>
+					</div>
+					<div class="right">
+						<form onsubmit="return mySubmitFunction()">
+							<fieldset>
+								<label>Quantity</label><input type="number" value="number" id="red" name="red">
+								<input id="send" type="submit" value="Submit" class="btn">
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>-->
+
+		
+		<div class="col s12 m12 l12 reset-padding">
+			<div class="col s12 m12 l12 center custom-row">
+				<div class="col s12 m4 l4 menu-button center appear-left">
+					<div class="path-selection">
+						<a data-path="cupcakes" href="#!">
+							<img src="img/cupcake-trigger.jpg">
+						</a>
+					</div>
+					<div class="btn-placement-l4">
+						<div class="btn keymaster">
+							<a data-path="cupcakes" href="#!">cupcakes<br><h6>$4 each &mdash; min 4</h6></a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4 menu-button">
+					<div class="path-selection">
+						<a data-path="chocolate" href="#!">
+							<img src="img/chocolate-trigger.jpg">
+						</a>
+					</div>
+					<div class="btn-placement-l4">
+						<div class="btn keymaster">
+							<a data-path="chocolate" href="#!">chocolate<br><h6>$10 each &mdash; min 1</h6></a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4 menu-button">
+					<div class="path-selection">
+						<a data-path="cookies" href="#!">
+							<img src="img/cookie-trigger.jpg">
+						</a>
+					</div>
+					<div class="btn-placement-l4">
+						<div class="btn keymaster">
+							<a data-path="cookies" href="#!">cookies<br><h6>$3 each &mdash; min 8</h6></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m12 l12 center custom-row">
+				<form id="tier2" action="" class="custom-menu">
+					<fieldset>
+						<label class="inactive">Chocolate<input type="checkbox" name="chocolate-cupcake"></label>
+						<label class="inactive">Red Velvet<input type="checkbox" name="red-velvet-cupcake"></label>
+						<label class="active">Butter<input type="checkbox" name="butter-cupcake" checked></label>
+					</fieldset>
+				</form>
+			</div>
+			<div class="col s12 m12 l12 center custom-row">
+				<form id="tier3" action="" class="custom-menu">
+					<fieldset>
+						<span class="type-desc">
+							<h2 class="title">Frosting</h2>
+							<p>Lorem dim sum Lo baak gou Taro cake Deep fried pumpkin and egg-yolk ball vegetarian crisp spring rolls dried scallop and leek puff deep fried seaweed</p>
+						</span>
+						<label class="inactive">Chocolate +$1<input type="checkbox" name="chocolate-cupcake"></label>
+						<label class="inactive">Red Velvet +$1<input type="checkbox" name="red-velvet-cupcake"></label>
+						<label class="active">Butter +$1<input type="checkbox" name="butter-cupcake" checked></label>
+						<button class="btn">Add to Cart <span class="fa fa-arrow-right"></span></button>
+					</fieldset>
+				</form>
+			</div>
+				
+		</div> 
+<!--
+			<div class="col s12 m6 l6">
+				<div class="path-selection right">
+					<img src="img/menu-hero.jpg">
+				</div>
+			</div>
+
+
+			<div id="current-selection" class="col s12 m6 l6 menu-list">
+				<div class="menu-item">
+					<div class="left">
+						<h2>Red Velvet Cupcakes</h2>
+						<p>Classic southern style cupcakes. The BEST red velvet cupcakes &mdash; a gorgeous red color, moist and fluffy, and topped with luscious cream cheese frosting.</p>
+						<h6><em>$4.99 each &mdash; 40mg/thc</em></h6>
+					</div>
+					<div class="right">
+						<form action="">
+							<fieldset>
+								<label>Quantity</label><input type="number" value="number" name="red-quantity">
+								<button class="btn">Add to Cart</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>-->
+		</div>
+
+	</section>
+
+	<section id="shopping-cart">
+		<div id="checkout" class="modal">
+			<div class="modal-content final-order">
+				<h4>Today's Order</h4>
+				<p>Review the following order to ensure it's correct.<br><em>Note: drivers check rec cards upon delivery.</em></p>
+				<span id="person-order">
+					<span id="someProduct" class="person-order">
+						<form class="custom-printout">
+							<fieldset>
+								<h6>Red Velvet Cupcake</h6>
+								<h6><em>40mg</em></h6>
+								<input type="number" value="10" min="0" name="quantity" />
+								<span class="add-on-item">
+									<label name="unique">Unique <button><span class="fa fa-close"></span></button></label>
+								</span>
+							</fieldset>
+						</form>
+					</span>
+					<span id="someProduct" class="person-order">
+						<h6>Red Velvet Cupcake</h6>
+						<h6><em>40mg</em></h6>
+						<form>
+							<fieldset>
+								<input type="number" value="10" min="0" name="quantity" />
+							</fieldset>
+						</form>
+					</span>
+				</span>
+			</div>
+			<div class="modal-content">
+					<form id="person-info" action="form-to-email.php" method="post" class="person-info">
+						<fieldset>
+							<span class="person-order">
+								<h6><em>Please fill out the following form to place your order:</em></h6>
+								<span class="order-form">
+									<input type='text' name='name' placeholder='Your name ex: Marty McFly' required />
+									<input type='text' name='email' placeholder='Your email ex: dbrown@timetraveler.com' required />
+									<input type='text' name='address' placeholder='Your delivery address ex: 7544 Girard Ave, La Jolla, CA 92037' required />
+									<input type='text' name='phone' placeholder='Your phone number ex: 714 651-5528' required />
+									<input type='hidden' name='message' id="place-order-message" value="message" />
+								</span>
+							</span>
+								<input id="placeOrder" class="modal-action btn cart-checkout" type="submit" name="submit" value="submit" />
+								<button class="modal-action modal-close btn cart-checkout btn-back" value="back">Back</button> 
+						</fieldset>
+					</form>
+			</div> 
+		</div>
+	</section>
+
+	<section id="contact" class="row">
+		<div class="col s12 m8 l8 center contact-form-container">
+			<h1>Contact Us!</h1>
+			<div class="row">
+				<div class="col s12 m8 l8 center">
+					<p class="top-border">Questions? Concerns? Comments?<br>If you have the time, we'd love to hear from you!</p>
+				</div>
+			</div>
+			<form id="person-info" action="form-to-email.php" method="post" class="contact-form-form">
+				<fieldset>
+					<span class="contact-message">
+						<h6><em>Please fill out the following form:</em></h6>
+						<span class="contact-form-info">
+							<input type='text' name='name' placeholder='Your name ex: Marty McFly' required />
+							<input type='text' name='email' placeholder='Your email ex: dbrown@timetraveler.com' required />
+							<textarea name='message' rows="10" cols="50" placeholder="Let us know what you think." required></textarea>
+						</span>
+					</span>
+					<input id="placeOrder" class="modal-action btn cart-checkout" type="submit" name="submit" value="submit" />
+				</fieldset>
+			</form>
+		</div>	
+	</section>
+
+<!-- end Header/NAV -->
+
+	<footer id="site-map" class="row">
+		<div class="container">
+			<div class="col s12 m12 l12">
+				<?php 
+					$date_default_timezone_set('America/Los_Angeles');
+					$current_year = date("y");
+				?>
+				<h4>TigerLilyBakes &copy;<?php echo $current_year; ?></h4>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		function init(){
+			console.log("working");
+			console.log($('.checkout'));
+			$('.checkout').leanModal({
+				dismissible: true, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				in_duration: 300, // Transition in duration
+				out_duration: 200, // Transition out duration
+			});
+		}
+		window.onload = init;
+	</script>
+	<!--<script type="text/javascript" src="js/scripty-min.js"></script>-->
+
+<!-- End Footer -->
+
+</body>
+</html>

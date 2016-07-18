@@ -1,22 +1,22 @@
 {
-	"30" : {
+	"MP30" : {
 		"thc": "30mg/thc",
-		"price": "35"
+		"price": "9"
 	},
-	"50" : {
+	"MP50" : {
 		"thc": "50mg/thc",
-		"price": "45"
+		"price": "12"
 	},
-	"100" : {
+	"MP100" : {
 		"thc": "100mg/thc",
-		"price": "55"
+		"price": "14"
 	},
-	"150" : {
+	"MP150" : {
 		"thc": "150mg/thc",
-		"price": "65"
+		"price": "17"
 	},
-	"200" : {
+	"MP200" : {
 		"thc": "200mg/thc",
-		"price": "80"
+		"price": "20"
 	}
 }

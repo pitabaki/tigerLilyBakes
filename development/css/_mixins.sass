@@ -10,15 +10,25 @@
 	-moz-border-radius: $var !important
 	border-radius: $var !important
 
-=placeholder($var)
+=placeholderColor($val)
 	::-webkit-input-placeholder
-		color: $var
+		color: $val
 	::-moz-placeholder
-		color: $var
+		color: $val
 	::-ms-input-placeholder
-		color: $var
+		color: $val
 	::-moz-placeholder
-		color: $var
+		color: $val
+
+=placeholderPadding($val)
+	::-webkit-input-placeholder
+		padding-left: $val
+	::-moz-placeholder
+		padding-left: $val
+	::-ms-input-placeholder
+		padding-left: $val
+	::-moz-placeholder
+		padding-left: $val
 
 =muscle-flex
 	display: -webkit-box

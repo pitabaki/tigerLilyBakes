@@ -1,0 +1,96 @@
+{	
+	"tier4" : {
+		"name": "Toppings",
+		"desc": "The icing on the cake, so to speak."
+	},
+	"driedLavender" : {
+		"name": "Dried Lavender",
+		"tier": "4",
+		"price": "0.5",
+		"type": "solids"
+	},
+	"chiliPowderSolid" : {
+		"name": "Chili Powder",
+		"tier": "4",
+		"price": "0.5",
+		"type": "solids"
+	},
+	"oreo" : {
+		"name": "Oreo Cookies",
+		"tier": "4",
+		"price": "0.5",
+		"type": "solids"
+	},
+	"mmsTopping" : {
+		"name": "M&Ms",
+		"tier": "4",
+		"price": "0.5",
+		"type": "solids"
+	},
+	"strawberriesTopping" : {
+		"name": "Strawberries Slices",
+		"tier": "4",
+		"price": "0.5",
+		"type": "solids"
+	},
+	"bananaTopping" : {
+		"name": "Banana Slices",
+		"tier": "4",
+		"price": "0.5",
+		"type": "solids"
+	},
+	"caramelDriz" : {
+		"name": "Caramel Dizzle",
+		"tier": "4",
+		"price": "0.25",
+		"type": "drizzle"
+	},
+	"chocoDriz" : {
+		"name": "Chocolate Dizzle",
+		"tier": "4",
+		"price": "0.25",
+		"type": "drizzle"
+	},
+	"chocoShavings" : {
+		"name": "Chocolate Shavings",
+		"tier": "4",
+		"price": "0.75",
+		"type": "shavings"
+	},
+	"toastedAlmonds" : {
+		"name": "Toasted Almonds",
+		"tier": "4",
+		"price": "0.75",
+		"type": "shavings"
+	},
+	"toastedCoconut" : {
+		"name": "Toasted Coconut",
+		"tier": "4",
+		"price": "0.75",
+		"type": "shavings"
+	},
+	"creamCheeseFrosting" : {
+		"name": "Cream Cheese Frosting",
+		"tier": "4",
+		"price": "1",
+		"type": "frosting"
+	},
+	"chocolateFrosting" : {
+		"name": "Chocolate Frosting",
+		"tier": "4",
+		"price": "1",
+		"type": "frosting"
+	},
+	"strawberryFrosting" : {
+		"name": "Strawberry Frosting",
+		"tier": "4",
+		"price": "1",
+		"type": "frosting"
+	},
+	"sweetCreamFrosting" : {
+		"name": "Sweet Cream Frosting",
+		"tier": "4",
+		"price": "1",
+		"type": "frosting"
+	}
+}

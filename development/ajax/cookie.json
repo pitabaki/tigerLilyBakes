@@ -1,32 +1,26 @@
 {	
-	"keith-jordan" : {
-		"name": "Keith Jordan",
-		"job": "CEO and Founder",
-		"bio": "Founded the 1INGRESS Corporation in 2012. He was the co-founder of Fantainment Corporation, a not-for-profit corporation. Mr. Jordan has served in the U.S. Armed Service, U.S. Postal Service, and National Basketball Association as a recruiter/agent."
+	"tier2" : {
+		"name": "Base",
+		"desc": "Greatness is built on a strong foundation."
 	},
-	"ronald-tasse" : {
-		"name": "Ronald C Tassé",
-		"job": "Chief Operations Officer",
-		"bio": "Mr. Tassé’s work experience includes Teacher/Instructor Dickinson-Warren Business College (security hardware integration), Operations Manager, General Manager, and Sales Manager Electronics Department Rex Key & Security"
+	"sugar" : {
+		"name": "Sugar",
+		"tier": "tier2"
 	},
-	"millard-larkin" : {
-		"name": "Millard L Larkin II",
-		"job": "Vice President",
-		"bio": ""
+	"snickerdoodle" : {
+		"name": "Snickerdoodle",
+		"tier": "tier2"
 	},
-	"taz-hardy" : {
-		"name": "Taz Hardy",
-		"job": "Chief Investment Officer",
-		"bio": ""
+	"basic" : {
+		"name": "Basic",
+		"tier": "tier2"
 	},
-	"tommie-moon" : {
-		"name": "Tommy L Moon",
-		"job": "Director of Sales and Customer Engagement",
-		"bio": ""
+	"chocolate" : {
+		"name": "Chocolate",
+		"tier": "tier2"
 	},
-	"dezebee-miles" : {
-		"name": "Dezebee Miles Jr.",
-		"job": "Director of Athletics' Educational Development",
-		"bio": ""
+	"peanutButter" : {
+		"name": "Peanut Butter",
+		"tier": "tier2"
 	}
 }

@@ -1,0 +1,14 @@
+{	
+	"tier2" : {
+		"name": "Base",
+		"desc": "Greatness is built on a strong foundation."
+	},
+	"tier3" : {
+		"name": "Filling",
+		"tier": "The gooey center. Or not. You decide."
+	},
+	"tier4" : {
+		"name": "Toppings",
+		"tier": "The icing on the cake, so to speak."
+	}
+}

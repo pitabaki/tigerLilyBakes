@@ -1,32 +1,22 @@
 {	
-	"keith-jordan" : {
-		"name": "Keith Jordan",
-		"job": "CEO and Founder",
-		"bio": "Founded the 1INGRESS Corporation in 2012. He was the co-founder of Fantainment Corporation, a not-for-profit corporation. Mr. Jordan has served in the U.S. Armed Service, U.S. Postal Service, and National Basketball Association as a recruiter/agent."
+	"tier2" : {
+		"name": "Base",
+		"desc": "Greatness is built on a strong foundation."
 	},
-	"ronald-tasse" : {
-		"name": "Ronald C Tassé",
-		"job": "Chief Operations Officer",
-		"bio": "Mr. Tassé’s work experience includes Teacher/Instructor Dickinson-Warren Business College (security hardware integration), Operations Manager, General Manager, and Sales Manager Electronics Department Rex Key & Security"
+	"dark" : {
+		"name": "Dark",
+		"tier": "tier2"
 	},
-	"millard-larkin" : {
-		"name": "Millard L Larkin II",
-		"job": "Vice President",
-		"bio": ""
+	"semiDark" : {
+		"name": "Semi-Dark",
+		"tier": "tier2"
 	},
-	"taz-hardy" : {
-		"name": "Taz Hardy",
-		"job": "Chief Investment Officer",
-		"bio": ""
+	"milk" : {
+		"name": "Milk",
+		"tier": "tier2"
 	},
-	"tommie-moon" : {
-		"name": "Tommy L Moon",
-		"job": "Director of Sales and Customer Engagement",
-		"bio": ""
-	},
-	"dezebee-miles" : {
-		"name": "Dezebee Miles Jr.",
-		"job": "Director of Athletics' Educational Development",
-		"bio": ""
+	"white" : {
+		"name": "White",
+		"tier": "tier2"
 	}
 }

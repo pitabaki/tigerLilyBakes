@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass');
 
 //Placeholder array
-var htmlList = ['../index.html'];
+var htmlList = ['../index.php', '../thank-you.php', '../thanks.php', '../form-to-email.php', '../order-to-email.php'];
 
 gulp.task('sass', function () {
   gulp.src('../css/style.sass')
@@ -37,5 +37,5 @@ gulp.task('massiveMerge', function() {
 		.pipe(gulp.dest('../../production'));
    var img = gulp.src('../img/*')
 		.pipe(gulp.dest('../../production/img'));
-   return merge(ajax, css, javascript, index, img);
+   return merge(ajax, css, javascript, php, index, img);
 });

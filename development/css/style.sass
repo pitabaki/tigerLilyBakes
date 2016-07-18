@@ -19,7 +19,7 @@
 
 *
 	+box-reset
-	+border-radius(0)
+	+border-radius(2px)
 
 body
 	position: absolute
@@ -34,6 +34,10 @@ input[type="checkbox"]
 	position: relative !important
 	left: 0 !important
 	opacity: 1 !important
+
+button
+	border: 2px solid transparent !important
+
 h1,
 h2,
 h3,
@@ -43,7 +47,8 @@ h6,
 p,
 a,
 li,
-input
+input,
+textarea
 	font-family: $head-copy
 	color: $main-black !important
 
@@ -67,7 +72,7 @@ footer
 	width: 100%
 	position: absolute
 	margin: 0 auto !important
-	min-height: 350px
+	min-height: 40px
 	padding: 0 50px 40px
 
 h1
@@ -97,7 +102,9 @@ h5
 	font-size: 21px
 	line-height: 28px
 h6,
-label
+label,
+input,
+textarea
 	font-size: 16px
 	line-height: 21px
 	font-weight: 400
@@ -107,6 +114,15 @@ label
 label
 	font-family: $body-copy
 	padding-right: 10px
+	background-color: inherit !important
+
+input[type="number"]:focus,
+input[type="number"]:active,
+input[type="text"]:focus,
+input[type="text"]:active,
+textarea:focus
+	outline: 0
+	border-bottom: 1px solid $main-green !important
 
 input[type="number"]
 	width: 30px
@@ -138,6 +154,13 @@ fieldset
 	left: 0
 	opacity: 1
 
+.hide
+	display: none
+
++placeholderColor(#666666)
+
++placeholderPadding(4px)
+
 .form-set
 	width: 100%
 
@@ -156,11 +179,20 @@ a,
 	transition: background-color 0.25s $cubic
 	+border-radius(10px)
 
-form .btn
+.btn-back
+	width: 30% !important
+
+form .btn,
+button .btn,
+.btn a
+	margin-top: 4px !important
 	font-family: $head-copy
 	color: $main-white !important
 	display: block
 	text-transform: none
+
+.btn a
+	margin-top: 0 !important
 
 .btn:hover,
 .btn:focus
@@ -176,6 +208,58 @@ form .btn
 
 .reset-margin
 	margin: 0 auto !important
+
+button
+	@extend .btn
+	margin: 10px !important
+	font-weight: 600
+	color: $main-white
+	outline: 0
+	border: 0
+	width: 80%
+	padding: 10px 0
+
+.left-button button
+	float: left
+
+.right-button button
+	float: right
+
+.inactive
+	background-color: #666666
+	cursor: default
+
+.inactive a
+	cursor: default
+
+.inactive:hover
+	background-color: #666666
+
+.modal
+	width: 75% !important
+
+.loading
+	display: block
+	position: fixed
+	top: 0
+	margin: 0 auto !important
+	height: 100%
+	width: 100%
+	max-width: 100%
+	background-color: $main-white
+	opacity: 1
+	z-index: 9999999999
+	will-change: opacity
+	transition: opacity 1s $cubic
+
+.progress
+	margin: 0 auto !important
+	top: 50%
+	width: 70%
+	background-color: $main-green !important
+
+.indeterminate
+	background-color: $main-red !important
 
 /*
  * 1.1 End General Section
@@ -238,9 +322,37 @@ nav a.button-collapse
 	height: 26px
 	width: 26px
 
+#menu-select-nav
+	top: -120px
+	z-index: 3 !important
+	height: auto
+	background-color: $main-green
+	will-change: top
+	transition: top 0.5s ease-in
+
+#menu-select-nav .row
+	margin-bottom: 10px !important
+
+#discount
+	display: none
+	top: 0
+	will-change: top
+	transition: top 0.5s $cubic
+
+.discount
+	top: 0
+	height:	80px
+	background-color: $main-red
+	z-index: 2 !important
+
+.discount h5
+	margin-top: 40px
+	color: $main-white !important 
+	line-height: 30px
 /*
  * 1.2 End Nav Section
  */
+
 
 /*
  * 1.3 Header Image Section
@@ -257,6 +369,8 @@ nav a.button-collapse
 
 .head-foreground img
 	position: relative
+	width: 100%
+	max-width: 496px
 	top: 180px
 	will-change: top
 	transition: top 0.5s $cubic
@@ -265,6 +379,8 @@ nav a.button-collapse
 	max-width: 1200px
 
 .head-background img
+	width: 100%
+	max-width: 1200px
 	position: relative
 	box-shadow: $default-box
 	z-index: 0
@@ -275,6 +391,7 @@ nav a.button-collapse
 
 .brand-logo img
 	display: inline-block
+	padding-left: 15px !important
 
 .container,
 section
@@ -306,26 +423,45 @@ section
 /*
  * 1.5 Path Selection/ Menu Section
  */
-
+.full-width
+	width: 100%
 .path-selection
-	padding: 20px !important
+	margin: 0 auto
+	display: inline-block
+	padding: 20px
 	background-color: $main-white
-	max-width: 588px
+	width: 100%
+	max-width: 550px
 	box-shadow: $default-box
+	will-change: margin-top
+	transition: all 0.5s $cubic
 
 .path-selection img
 	width: 100%
 	max-width: 550px
 
 .menu-button
-	will-change: opacity, top
+	position: relative
+	height: 100%
+	will-change: opacity, width
 	opacity: 1
-	max-height: 400px
 	transition: all 0.5s $cubic
+
+.active
+	background-color: $main-hover-green
 
 .l6-left,
 .l4-left
 	padding-left: 0 !important
+
+.l6 .path-selection
+	max-width: 588px
+
+.l6 .keymaster
+	top: -40px
+	
+.l6 .keymaster a
+	line-height: 40px
 
 .l6-right,
 .l4-right
@@ -344,29 +480,23 @@ section
 
 .btn-placement,
 .btn-placement-l4
-	position: absolute
+	position: relative
 	width: 100%
-	max-width: 588px
 	text-align: center
 
 .btn-placement-l4
-	max-width: 380px
+	z-index: -1
+	top: 0
+	opacity: 1
+	will-change: top, opacity
+	transition: all 0.5s $cubic
 
-.btn-placement-l4 .keymaster
-	margin-top: 220px
+.btn-disappear
+	top: -40px
+	opacity: 0
 
-.keymaster
-	position: relative
-	margin-top: 360px
-	height: 52px
-
-.keymaster a
-	font-family: $head-copy
-	font-weight: 600
-	text-transform: capitalize
-	font-size: 24px
-	line-height: 52px
-	color: $main-white !important
+.img-disappear
+	width: 0 !important
 
 
 /*
@@ -377,8 +507,17 @@ section
  * 1.6 Current Menu Section
  */
 
+#menu
+	max-height: 550px
+	will-change: max-height
+	transition: max-height 0.5s $cubic
+	overflow: hidden
+
 .menu
-	transition: all 0.5s $cubic
+	max-height: 0px
+	overflow: hidden
+	will-change: max-height
+	transition: all 2s $cubic
 
 .menu-item
 	padding: 20px 40px
@@ -389,9 +528,10 @@ section
 	overflow-y: scroll
 
 #current-menu
-	max-height: 0
+	max-height: 580px
 	overflow: hidden
 	transition: max-height 0.5s $cubic
+
 /*
  * 1.6 End Current Menu Section
  */
@@ -400,25 +540,127 @@ section
  * 1.7 Custom Menu Section
  */
 
-.custom-menu label
-	margin: 20px !important
+.custom-row
+	margin: 10px auto !important
+
+.custom-menu label,
+.custom-menu .btn
+	margin: 0 10px !important
 	padding: 0 !important
+	font-family: $head-copy
+	font-weight: 600
 	font-size: 1em
 	line-height: 60px
 	display: inline-block
 	text-align: center
+	color: $main-black !important
 	height: 60px
-	width: 200px
-	background-color: $main-grey
-	+border-radius(10px)
+	width: 25%
 	box-shadow: $default-box
+	background-color: $main-white !important
+	will-change: background-color
+	transition: background-color 0.5s $cubic
+
+.custom-menu label
+	margin: 10px 20px 20px !important
+
+.custom-menu .btn
+	margin: 10px auto !important
+	color: $main-white !important
+	width: 40%
+	background-color: $main-green !important
+	+border-radius(4px)
+
+.custom-menu .btn:hover,
+.custom-menu .btn:focus,
+.custom-menu .btn:active
+	background-color: $main-hover-green !important
+
 
 .custom-menu input
-	margin: 20px
+	margin-left: 10px !important
 	margin-right: 0 !important
 
 .custom-menu fieldset
-	text-align: left
+	text-align: center
+
+.custom-menu .active
+	color: $main-white !important
+	background-color: $main-green !important
+
+.custom-menu .inactive
+	background-color: $light-grey !important
+
+.fa-arrow-right
+	position: relative
+	left: 0px
+	will-change: left
+	transition: left 0.5s $cubic
+
+.fa-active
+	left: 30px
+	will-change: left
+	transition: left 0.5s $cubic
+
+.tiers
+	opacity: 1
+	max-height: 0px
+	will-change: max-height, opacity
+	transition: all 1s $cubic
+
+.tier-btn
+	width: 100%
+	display: inline-block
+
+.type-desc
+	display: block
+	padding: 40px 40px 20px
+	margin: 0 auto !important
+	width: 60%
+
+.type-desc p
+	margin: 0 auto !important
+	width: 80%
+	margin-top: 14px !important
+	text-align: center
+
+.title
+	margin: 0 auto !important
+	font-size: 36px
+	font-weight: 300
+
+.btn-placement-l4
+	margin: 0 auto
+
+.btn-placement-l4 .keymaster
+	margin-top: 10px
+
+.keymaster
+	position: relative
+	width: 80%
+	font-weight: 600!important
+	color: $main-white
+	max-width: 550px
+	height: 60px
+	+border-radius(4px)
+	box-shadow: $default-box
+	will-change: width
+	transition: width 0.5s $cubic
+
+.keymaster:hover
+	width: 90%
+
+.keymaster a
+	margin-top: 8px !important
+	font-family: $head-copy
+	font-weight: 600
+	text-transform: capitalize
+	font-size: 24px
+	line-height: 24px
+
+.keymaster h6,
+.keymaster a
+	color: $main-white !important
 
 .price-list
 	float: left
@@ -454,12 +696,12 @@ section
 	margin-right: 40px
 
 #checkout
-	height: 80%
+	height: 100%
+	max-height: 90% !important
+	top: 8% !important
 
-#checkout .modal-content
-	height: 90%
-
-.person-order
+.person-order,
+.order-total
 	display: inline-block
 	width: 100%
 	padding: 10px
@@ -467,6 +709,7 @@ section
 	border: 1px solid $main-grey
 
 .person-order h6,
+.person-order h5,
 .person-order p,
 .person-order form,
 .person-order input
@@ -474,6 +717,12 @@ section
 
 .person-order h6
 	padding-right: 4px
+	float: left
+	text-align: left
+
+.person-order h5
+	text-align: left
+	width: 100%
 
 .person-order form,
 .person-order input
@@ -484,6 +733,294 @@ section
 	+box-reset
 	border: 1px solid $main-grey
 
+.order-total
+	border: none
+
+.order-total h6
+	font-style: italic
+
+.order-total h2
+	margin: 0 auto
+	float: right
+	color: $main-green !important
+
+.person-info
+	width: 100%
+
+.person-info input
+	width: 49%
+	display: inline-block
+	margin: 0 auto
+	border: 0
+
+.modal-content
+	width: 100%
+	display: inline-block
+
+.order-form input
+	margin: 4px auto !important
+	background-color: $main-grey !important
+
+
+input[name="name"]
+	float: left !important
+
+input[name="address"],
+input[name="phone"]
+	width: 100%
+
+#person-info input[type="submit"]
+	width: 35%
+	margin-left: 10px
+
+
 /*
  * 1.7 End Custom Menu Section
  */
+
+/*
+ * 1.8 Contact Form Section
+ */
+
+.contact-form-container
+	background-color: $main-white
+	padding: 20px !important
+
+.contact-form-info
+	@extend .order-form
+
+.contact-form-form
+	@extend .person-info
+
+.contact-form-form input
+	width: 100%
+
+.contact-message
+	@extend .person-order
+
+textarea
+	@extend input
+
+#contact
+	@extend #mission
+/*
+ * 1.8 End Contact Form Section
+ */
+
+/*
+ * 1.9 Footer
+ */
+
+footer h6
+	text-align: center
+
+footer a
+	font-family: $head-copy
+	font-weight: 600
+	color: $main-green !important
+	will-change: color
+	transition: color 0.5s $cubic
+
+footer a:hover
+	color: $main-hover-green !important
+
+/*
+ * 1.9 End Footer
+ */
+
+/*
+ * 1.10 Checkout Pop-up
+ */
+
+#mobile-cart
+	position: fixed
+	top: 100%
+	height: 900px
+	padding: 20px
+	width: 100%
+	background-color: #ffffff
+	z-index: 9919191919
+	box-shadow: $reverse-box
+	will-change: top
+	+border-radius(0)
+	transition: top 0.5s $cubic
+
+.custom-printout,
+.add-on-item
+	width: 100%
+
+.add-on-item
+	display: inline-block
+	margin: 4px auto
+	padding: 10px !important
+	border: 1px solid $main-grey
+
+.add-on-item label
+	display: inline-block
+	font-family: $head-copy
+	text-align: left
+	float: left
+	padding: 10px !important
+	background-color: $main-grey !important
+	+border-radius(4px)
+	opacity: 1
+	will-change: opacity
+	transition: opacity 0.5s $cubic
+
+.add-on-item button
+	width: 20px
+	height: 20px
+	line-height: 0
+	color: $main-black !important
+	background-color: transparent
+	float: right
+	margin: 0 auto !important
+	padding: 0 !important
+	padding-left: 4px !important
+	border: 0
+
+/*
+ * 1.10 End Checkout Pop-up
+ */
+
+/*
+ * 1.11 Thank You
+ */
+
+.final-order h1
+	color: $main-green
+/*
+ * 1.11 End Thank You
+ */
+
+@media screen and (max-width: 1200px)
+	.head-foreground img
+		top: 140px
+
+	.custom-menu label,
+	.custom-menu .btn
+		width: 35%
+
+@media screen and (min-width: 992px)
+	.menu-drop .row
+		margin-top: 10px !important
+
+@media screen and (max-width: 992px)
+	#current-menu
+		max-height: 100%
+
+	.button-collapse
+		background-color: $main-white !important
+		+border-radius(0)
+
+	button
+		background-color: $main-green
+		+border-radius(10px)
+		width: 100%
+		margin: 10px auto !important
+		float: inherit !important
+
+	.menu-drop
+		margin-top: 20px !important
+
+	.head-foreground img
+		width: 60%
+		top: 120px
+
+	#menu
+		max-height: 1200px
+
+	.menu-button
+		margin: 10px auto !important
+		display: inline-block
+		text-align: center
+		width: 100%
+		float: none !important
+		padding: 0 !important
+
+	.custom-menu label,
+	.custom-menu .btn
+		margin: 4px !important
+		width: 40%
+
+	.right,
+	.left
+		text-align: center
+		float: inherit !important
+		margin: 0 auto !important
+
+	.btn-placement
+		margin: 0 auto !important
+
+	.menu-item
+		margin: 0 auto
+
+	.path-selection
+		float: none !important
+
+	.modal
+		width: 80% !important
+
+	.quantity
+		position: relative !important
+		display: inline-block !important
+		top: 0 !important
+
+@media screen and (max-width: 773px)
+	.head-foreground img
+		top: 100px
+
+@media screen and (max-width: 660px)
+
+	.menu-item
+		width: 100%
+
+	.quantity-selection
+		display: inline-block
+		float: none
+		padding-top: 10px
+
+	.l6-right
+		margin-top: 20px !important
+
+	.modal
+		width: 90% !important
+
+	p
+		font-size: 0.8em !important
+
+	#person-info input[type=submit],
+	#person-info textarea[type=submit],
+	.btn-back
+		margin-bottom: 10px !important
+		width: 100% !important
+
+	.keymaster
+		width: 100%
+
+	.custom-menu label,
+	.custom-menu .btn
+		width: 100%
+
+	.type-desc
+		width: 100%
+
+@media screen and (max-width: 600px)
+	.right-button button,
+	.left-button button
+		float: inherit
+
+	.head-foreground img
+		width: 60%
+		top: 80px
+
+	.head-background img
+		top: 20px
+
+	.menu-list
+		height: 100%
+		overflow: hidden
+
+	.discount h5
+		font-size: 16px
+		line-height: 34px
